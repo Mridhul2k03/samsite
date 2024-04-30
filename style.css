@@ -1,0 +1,251 @@
+body{
+  font-family: "Inconsolata", monospace;
+}
+.sidenav {
+  margin-top: 100px;
+  height: 100%;
+  width: 100px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+.whatsapp-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 60px;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.pcontainer {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1001;
+}
+.pcontent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border: 0;
+  border-radius: 10px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+.parallax {
+  background-image: url("imgs/para2.jpg");
+  min-height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.5); 
+  }
+.sidenav {
+  height: auto;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.215);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 20px;
+}
+
+
+.sidenav a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    display: block;
+    background-color: #dee5d386;
+    margin-bottom: 1px;
+    margin-right: 20px;
+    transition: 0.3s;
+}
+
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+ 
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+
+.openbtn:hover {
+    background-color: #444;
+}
+::-webkit-scrollbar{
+  display:none ;
+}
+.cardmp:hover .cardmb {
+  bottom: 0%;
+}
+
+.cardmb {
+  width: 100%;
+  height: 100%;
+  bottom:-100% ;
+  position: absolute;
+  background-color: #ffffff6b;
+  backdrop-filter: blur(5px);
+  padding: 10px;
+  color: black;
+  transition: bottom 1.5s;
+  display: inline-block;
+  animation: cardAnimation 0.5s ease-out forwards;
+}
+
+.cardmp {
+  overflow: hidden;
+  position: relative;
+}
+.card-imgmp {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.text-animation {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+
+.text-animation.animate {
+  opacity: 1;
+}
+.rounded-image {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+  perspective: 1000px;
+}
+
+.rounded-image img, .image-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #E0D0C1;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden; 
+  transition: transform 1.5s; 
+}
+
+.image-back {
+  transform: rotateY(180deg); 
+}
+
+.rounded-image:hover img {
+  transform: rotateY(-180deg); 
+}
+
+.rounded-image:hover .image-back {
+  transform: rotateY(0deg); 
+}
+.main {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+}
+.parallaxc {
+  background-image: url("imgs/chef1.jpg");
+  min-height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.5); 
+}
+.parallaxs {
+  background-image: url("imgs/service1.jpg");
+  min-height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.5); 
+}
+.parallaxi {
+  background-image: url("imgs/itembg.jpg");
+  min-height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+
+.card.cardmp {
+  animation: fadeIn 0.5s ease-in-out;
+}
+.cardmp {
+  transition: transform 0.3s ease-in-out;
+}
+
+.cardmp:hover {
+  transform: translateY(-5px); /* You can adjust the value as needed */
+}

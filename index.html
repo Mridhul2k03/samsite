@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Wandering Foodie</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <link rel="icon" type="image/x-icon" href="imgs/favicon3.ico">
+
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sedan:ital@0;1&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sedan:ital@0;1&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Jacquard+12+Charted&family=Jersey+15&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sedan:ital@0;1&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    </head>
+
+<body class="parallax">
+    <div class="whatsapp-btn" onclick="openPopup()">
+        <i class="fab fa-whatsapp text-light "></i>
+      </div>
+    <div class="container-fluid pcontainer justify-content-center align-content-center " style="height: 100vh;width: 100%;" id="pContainer">
+        
+        <div class="card border-1 mx-auto pcontent" style="width: 18rem;height: 22rem;">
+            <div class="card-head bg-success rounded-top-1 align-content-center " style="width: 100%;height: 20%;">
+                <i class="bi bi-chat-left text-light ms-3 fs-1 float-start "></i><h5 class="float-start mt-2 ms-2 text-light ">Welcome</h5>
+            </div>
+            <div class="card-body" style="width: 100%;height: 60%;background-image: url('imgs/whatsappbg1.png');background-repeat: repeat-x;background-position: center;">
+                <div class="card border-0 " style="width: 12rem;height: 5rem;">
+                  
+                  <div class="card-body border-0 ">
+                    <p class="m-0">Hi there</p>
+                    <p>How can i help you</p>
+                  </div>
+                </div>
+            </div>
+            <div class="card-footer d-flex ">
+              <a href="https://wa.me/9567252212" class="btn mx-auto text-light rounded-start-5 rounded-end-5  " style="background-color: rgb(28, 232, 28);width:20rem">
+                <i class="fab fa-whatsapp"></i> Start Chat
+              </a>
+              
+              <div>
+        <span class="close-btn btn-close " onclick="closePopup()"></span>
+              </div>
+            </div>
+        </div>
+    </div>
+    <button class="openbtn bg-transparent sticky-top " onclick="toggleNav()">&#9776;</button>
+    <div id="mySidenav" class="sidenav ">
+        <a href="#home" class="">Home</a>
+        <a href="#about" class="">About</a>
+        <a href="#services" class="">Services</a>
+        <a href="contact.html" class="" style="margin-bottom: 20px;">Contact</a>
+    </div>
+        <div class=" text-center justify-content-center align-content-center " style="width:100%;height: 100vh;" id="home">
+            <h1 class="text-animation fw-bolder text-out" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.849) ;color:#faf059;font-size: 80px;">The Wandering Foodie</h1>
+            <h5 class="text-animation fw-bold text-light  " style="text-shadow: 2px 2px 4px rgb(0, 0, 0);font-size:30px">"Good food is the foundation of genuine happiness." - <span class=" " style="color:#faf059">Auguste Escoffier</span> </h5>
+        </div>
+        <div class="container mt-5">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000"> <!-- Added data-bs-interval="2000" for 2-second delay -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="imgs/friedrice.jpg" class="d-block w-100 rounded-3" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="fw-bolder text-start text-white text-animation">CHINESE</h5>
+                            <p class="text-start text-white text-animation">"民以食为天。" - 中国谚语</p>
+                            <p class="text-start text-white text-animation">--People regard food as their prime want</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imgs/risotto2.jpg" class="d-block w-100 rounded-3 " alt="...">
+                        <div class="carousel-caption d-none d-md-block ">
+                            <h5 class="fw-bolder text-start text-white text-animation">ITALIAN</h5>
+                            <p class="text-start text-animation">Mangia bene, ridi spesso, ama molto</p>
+                            <p class="text-start text-animation">--Eat well, laugh often, love much</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imgs/SpanishCuisine.jpg" class="d-block w-100 rounded-3 " alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="fw-bolder text-start text-white text-animation">FRENCH</h5>
+                            <p class="text-start text-animation">La cuisine française, c'est la passion dans chaque assiette</p>
+                            <p class="text-start text-animation">--French cuisine is passion on every plate</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div style="aspect-ratio: 16/9;" class="align-content-center align-items-center justify-content-center ">
+                <h1 class="text-center mb-5 fw-bolder text-animation text-animation" style="text-shadow: 2px 2px 4px rgb(0, 0, 0);color:white">Indulge in the multitude of flavors and experiences through the wandering foodie</h1>
+            </div>
+        </div>
+
+    <section class="py-5 sb" id="about">
+    <div class="container px-4 px-lg-5 mt-5">
+        <h1 class="text-center mb-5 fw-bolder pb-5 text-animation" style="text-shadow: 2px 2px 4px rgba(0, 0, 0);color:white" >Try the International flavours</h1>
+        <div class="row gx-4 gx-lg-5 row-cols-1 row-cols-md-2 row-cols-xl-3 justify-content-center">
+            <a href="items.html">
+                <div class="col mb-5 border-0 ">
+                <div class="card cardmp">
+                    <!-- Product image-->
+                    <img src="imgs/indiancimg.jpg" class="card-imgmp  rounded-1" alt="..." >
+                    <div class="card-body cardmb p-4 text-center ">
+                        <h3>INDIAN</h3>
+                        <br>
+                        <hr>
+                        <p class="fs-4 " >Explor the variety of flavours </p>
+                        <hr>
+                        <br>
+                        <p>Click &AMP; Explore</p>
+                    </div>
+                </div>
+            </div>
+            </a>
+            <a href="items.html">
+                <div class="col mb-5 border-0 ">
+                <div class="card cardmp">
+                    <!-- Product image-->
+                    <img src="imgs/japancimg.jpg" class="card-imgmp  rounded-1" alt="..." >
+                    <div class="card-body cardmb p-4 text-center ">
+                        <h3>JAPANESE</h3>
+                        <br>
+                        <hr>
+                        <p class="fs-4 " style="">Explor the variety of flavours </p>
+                        <hr>
+                        <br>
+                        <p>Click &AMP; Explore</p>
+                    </div>
+                </div>
+            </div>
+            </a>
+            <a href="items.html">
+                <div class="col mb-5 border-0 ">
+                <div class="card cardmp">
+                    <!-- Product image-->
+                    <img src="imgs/russiancimg.jpg" class="card-imgmp  rounded-1" alt="..." style="">
+                    <div class="card-body cardmb p-4 text-center ">
+                        <h3>RUSSIAN</h3>
+                        <br>
+                        <hr>
+                        <p class="fs-4 " style="">Explor the variety of flavours </p>
+                        <hr>
+                        <br>
+                        <p>Click &AMP; Explore</p>
+                    </div>
+                </div>
+            </div>
+            </a>
+            <a href="items.html">
+                <div class="col mb-5 border-0 ">
+                <div class="card cardmp">
+                    <!-- Product image-->
+                    <img src="imgs/koreancimg.jpg" class="card-imgmp  rounded-1" alt="..." style="">
+                    <div class="card-body cardmb p-4 text-center ">
+                        <h3>KOREAN</h3>
+                        <br>
+                        <hr>
+                        <p class="fs-4 " style="">Explor the variety of flavours </p>
+                        <hr>
+                        <br>
+                        <p>Click &AMP; Explore</p>
+                    </div>
+                </div>
+            </div>
+            </a>
+            <a href="items.html">
+                <div class="col mb-5 border-0 ">
+                <div class="card cardmp">
+                    <!-- Product image-->
+                    <img src="imgs/mexicancimg.jpg" class="card-imgmp  rounded-1" alt="..." style="">
+                    <div class="card-body cardmb p-4 text-center ">
+                        <h3>MEXICAN</h3>
+                        <br>
+                        <hr>
+                        <p class="fs-4 " style="">Explor the variety of flavours </p>
+                        <hr>
+                        <br>
+                        <p>Click &AMP; Explore</p>
+                    </div>
+                </div>
+            </div>
+            </a>
+            <a href="items.html">
+                <div class="col mb-5 border-0 ">
+                <div class="card cardmp">
+                    <!-- Product image-->
+                    <img src="imgs/americancimg.jpg" class="card-imgmp  rounded-1" alt="..." style="">
+                    <div class="card-body cardmb p-4 text-center ">
+                        <h3>AMERICAN</h3>
+                        <br>
+                        <hr>
+                        <p class="fs-4 " style="">Explor the variety of flavours </p>
+                        <hr>
+                        <br>
+                        <p>Click &AMP; Explore</p>
+                    </div>
+                </div>
+            </div>
+            </a>
+            <a href="items.html">
+                <div class="col mb-5 border-0 ">
+                <div class="card cardmp">
+                    <!-- Product image-->
+                    <img src="imgs/arabiancimg.jpg" class="card-imgmp  rounded-1" alt="..." style="">
+                    <div class="card-body cardmb p-4 text-center ">
+                        <h3>ARABIAN</h3>
+                        <br>
+                        <hr>
+                        <p class="fs-4 " style="">Explor the variety of flavours </p>
+                        <hr>
+                        <br>
+                        <p>Click &AMP; Explore</p>
+                    </div>
+                </div>
+            </div>
+            </a>
+            <a href="items.html">
+                <div class="col mb-5 border-0 ">
+                <div class="card cardmp">
+                    <!-- Product image-->
+                    <img src="imgs/turkishcimg.jpg" class="card-imgmp  rounded-1" alt="..." style="">
+                    <div class="card-body cardmb p-4 text-center ">
+                        <h3>TURKISH</h3>
+                        <br>
+                        <hr>
+                        <p class="fs-4 " style="">Explor the variety of flavours </p>
+                        <hr>
+                        <br>
+                        <p>Click &AMP; Explore</p>
+                    </div>
+                </div>
+            </div>
+            </a>
+            <a href="items.html">
+                <div class="col mb-5 border-0 ">
+                <div class="card cardmp">
+                    <!-- Product image-->
+                    <img src="imgs/spanishcimg.jpg" class="card-imgmp  rounded-1" alt="..." style="">
+                    <div class="card-body cardmb p-4 text-center ">
+                        <h3>SPANISH</h3>
+                        <br>
+                        <hr>
+                        <p class="fs-4 " style="">Explor the variety of flavours </p>
+                        <hr>
+                        <br>
+                        <p>Click &AMP; Explore</p>
+                    </div>
+                </div>
+            </div>
+            </a>
+        </div>
+    </div>
+
+</section>
+<section id="services">
+    <div class="container px-4 px-lg-5 mt-5">
+        <h1 class="text-center mb-5 fw-bolder pb-5" style="text-shadow: 2px 2px 4px rgba(0, 0, 0);color:white" >Explore Services</h1>
+        <div class="row gx-4 gx-lg-5 row-cols-1 row-cols-md-2 row-cols-xl-3 justify-content-center">
+            <a href="services.html" class="text-decoration-none mt-3">
+                <div class="rounded-image" id="roundedImage" onclick="rotateImage()">
+                <img src="imgs/cateringrimg.jpg" alt="Image" class="w-100">
+                <div class="image-back text-center ">
+                    <h3 class="text-black ">CATERING</h3>
+                </div>
+                </div>
+            </a>
+            <a href="services.html" class="text-decoration-none mt-3">
+                <div class="rounded-image" id="roundedImage" onclick="rotateImage()">
+                <img src="imgs/resturentrimg.jpg" alt="Image" class="w-100">
+                <div class="image-back text-center ">
+                    <h3 class="text-black ">RESTURENT</h3>
+                </div>
+                </div>
+            </a>
+            <a href="services.html" class="text-decoration-none mt-3">
+                <div class="rounded-image" id="roundedImage" onclick="rotateImage()">
+                <img src="imgs/hotelrimg.jpg" alt="Image" class="w-100">
+                <div class="image-back text-center ">
+                    <h3 class="text-black ">ROOMS</h3>
+                </div>
+                </div>
+            </a>
+            </div>
+        </div>
+        <div style="aspect-ratio: 16/3;">
+
+        </div>
+</section>
+<footer class="page-footer font-small  lighten-5  text-light" style="background-color:rgba(0, 0, 0, 0.466);">
+        
+    <div class=" " style="background-color: #faf059;">
+      <div class="container">
+
+        <div class="row py-4 d-flex align-items-center">
+  
+          <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+            <h6 class="mb-0 text-black">Wandering Foodie!</h6>
+          </div>
+
+          <div class="col-md-6 col-lg-7 text-center text-md-right">
+  
+           <a href=""><i class=" ms-4 fab fa-facebook-f  " style="color:#1877F2;text-shadow: 2px 2px 1px rgb(0,0,0,0.113);"></i></a>
+           <a href=""><i class=" ms-4 fab fa-twitter " style="color:#0077B5;text-shadow: 2px 2px 1px rgb(0,0,0,0.113);"></i></a>
+           <a href=""><i class=" ms-4 fab fa-whatsapp    " style="color:#075E54;text-shadow: 2px 2px 1px rgb(0,0,0,0.113);"></i></a> 
+           <a href=""><i class=" ms-4 fab fa-instagram   " style="color:#c1558b;text-shadow: 2px 2px 1px rgb(0,0,0,0.113);"></i></a>
+  
+          </div>
+  
+        </div>
+
+  
+      </div>
+    </div>
+
+    <div class="container text-center text-md-left mt-5">
+
+      <div class="row mt-3 dark-grey-text">
+
+        <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+
+          <h6 class="text-uppercase font-weight-bold ">Wandering foodie</h6>
+          <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>Biggets Food Enthusiast in</p>
+  
+        </div>
+
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+          <h6 class="text-uppercase font-weight-bold">Available Services</h6>
+          <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p><a class="text-light" href="#!">Restaurants</a></p>
+          <p><a class="text-light" href="#!">Hotel Rooms</a></p>
+          <p><a class="text-light" href="#!">Catering Service</a></p>        
+        </div>
+
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+  
+          <h6 class="text-uppercase font-weight-bold">Connect Us</h6>
+          <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p><a class="text-light" href="#!">Facebook</a></p>
+          <p><a class="text-light" href="#!">twitter</a></p>
+          <p><a class="text-light" href="#!">WhatsApp</a></p>
+          <p><a class="text-light" href="#!">Instagram</a></p>
+  
+        </div>
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <h6 class="text-uppercase font-weight-bold">Contact</h6>
+          <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <i class="fas fa-home mr-3"></i> INDIA, KERALA, CALICUT</p>
+          <p>
+            <i class="fas fa-envelope mr-3"></i> wanderingfoodie@gmail.com</p>
+          <p>
+            <i class="fas fa-phone mr-3"></i> + 91 999 888 777 00</p>
+          <p>
+            <i class="fas fa-print mr-3"></i> + 91 999 888 777 11</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright text-center  py-3">&COPY;  2024 Copyright:
+      <a class="dark-grey-text" href="https://wheelswander.com/"> wanderingfoodie.com</a>
+    </div>
+  </footer>
+    <script src="script.js"></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+    </main>
+</body>
+</html>

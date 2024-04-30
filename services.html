@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Wandering Foodie</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <link rel="icon" type="image/x-icon" href="imgs/favicon3.ico">
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sedan:ital@0;1&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sedan:ital@0;1&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Jacquard+12+Charted&family=Jersey+15&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sedan:ital@0;1&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    </head>
+<body class="parallaxs">
+
+    <div class="whatsapp-btn" onclick="openPopup()">
+        <i class="fab fa-whatsapp text-light "></i>
+      </div>
+    <div class="container-fluid pcontainer justify-content-center align-content-center " style="height: 100vh;width: 100%;" id="pContainer">
+        
+        <div class="card border-1 mx-auto pcontent" style="width: 18rem;height: 22rem;">
+            <div class="card-head bg-success rounded-top-1 align-content-center " style="width: 100%;height: 20%;">
+                <i class="bi bi-chat-left text-light ms-3 fs-1 float-start "></i><h5 class="float-start mt-2 ms-2 text-light ">Welcome</h5>
+            </div>
+            <div class="card-body" style="width: 100%;height: 60%;background-image: url('imgs/whatsappbg1.png');background-repeat: repeat-x;background-position: center;">
+                <div class="card border-0 " style="width: 12rem;height: 5rem;">
+                  
+                  <div class="card-body border-0 ">
+                    <p class="m-0">Hi there</p>
+                    <p>How can i help you</p>
+                  </div>
+                </div>
+            </div>
+            <div class="card-footer d-flex ">
+              <a href="https://wa.me/9567252212" class="btn mx-auto text-light rounded-start-5 rounded-end-5  " style="background-color: rgb(28, 232, 28);width:20rem">
+                <i class="fab fa-whatsapp"></i> Start Chat
+              </a>
+              
+              <div>
+        <span class="close-btn btn-close " onclick="closePopup()"></span>
+              </div>
+            </div>
+        </div>
+    </div>
+    <button class="openbtn bg-transparent sticky-top " onclick="toggleNav()">&#9776;</button>
+    <div id="mySidenav" class="sidenav ">
+        <a href="index.html" class="">Home</a>
+        <a href="index.html" class="">About</a>
+        <a href="services.html" class="">Services</a>
+        <a href="contact.html" class="" style="margin-bottom: 20px;">Contact</a>
+    </div>
+        <section id="services">
+            <div class="container px-4 px-lg-5 mt-5">
+                <h1 class="text-center mb-5 fw-bolder pb-5" style="text-shadow: 2px 2px 4px rgba(0, 0, 0);color:white" >Explore Services</h1>
+                <div class="row gx-4 gx-lg-5 row-cols-1 row-cols-md-2 row-cols-xl-3 justify-content-center">
+                    <a href="" class="text-decoration-none mt-3">
+                        <div class="rounded-image" id="roundedImage" onclick="rotateImage()">
+                        <img src="imgs/cateringrimg.jpg" alt="Image" class="w-100">
+                        <div class="image-back text-center ">
+                            <h3 class="text-black ">CATERING</h3>
+                        </div>
+                        </div>
+                    </a>
+                    <a href="" class="text-decoration-none mt-3">
+                        <div class="rounded-image" id="roundedImage" onclick="rotateImage()">
+                        <img src="imgs/resturentrimg.jpg" alt="Image" class="w-100">
+                        <div class="image-back text-center ">
+                            <h3 class="text-black ">RESTURENT</h3>
+                        </div>
+                        </div>
+                    </a>
+                    <a href="" class="text-decoration-none mt-3">
+                        <div class="rounded-image" id="roundedImage" onclick="rotateImage()">
+                        <img src="imgs/hotelrimg.jpg" alt="Image" class="w-100">
+                        <div class="image-back text-center ">
+                            <h3 class="text-black ">ROOMS</h3>
+                        </div>
+                        </div>
+                    </a>
+                    </div>
+                </div>
+                <div style="aspect-ratio: 16/3;">
+        
+                </div>
+        </section>
+
+        <script src="script.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
